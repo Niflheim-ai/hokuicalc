@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hokui - Payout Calculator</title>
+</head>
+<body>
+    <div class="container-fluid header d-flex flex-column align-items-center justify-content-center">
+        <p class="display-1 text-white title">Hokui</p>
+        <p class="h2 text-white subtitle">Payout Calculator</p>
+    </div>
+
+    <div class="container d-flex justify-content-center user-input mt-5">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 d-flex align-items-center justify-content-center">
+                <p class="h3"></p>
+                <form id="pointsForm" action="#" method="POST" class="form mt-3" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="pointsAmount" class="mb-2 offset-2">Amount of Points</label>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <input id="pointsAmount" name="pointsAmount" placeholder="Enter amount" type="text" required="required" class="form-control mb-3">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="robuxAmount" class="mb-2 offset-2">Equivalent Reward</label>
+                        <input id="robuxAmount" name="robuxAmount" placeholder="0" type="text" disabled class="form-control mb-3">
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                        <div class="d-grid">
+                            <button name="calculatePayout" type="submit" class="btn btn-success">Calculate</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <p class="text-center text-danger">*Rewards are calculated with tax included (30%)</p>
+
+    <script src="script.js"></script>
+    <!-- FontAwesome JS -->
+    <script src="https://kit.fontawesome.com/3348f3f5f0.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
