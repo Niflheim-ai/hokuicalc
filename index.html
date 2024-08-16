@@ -19,18 +19,18 @@
             <div class="col-lg-12 col-sm-12 d-flex align-items-center justify-content-center">
                 <p class="h3"></p>
                 <form id="pointsForm" action="#" method="POST" class="form mt-3" enctype="multipart/form-data">
-                    <div class="form-group">
-                        <label for="pointsAmount" class="mb-2 offset-2">Amount of Points</label>
+                    <div class="form-group text-center">
+                        <label for="pointsAmount" class="mb-2">Amount of In-Game Points</label>
                         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <input id="pointsAmount" name="pointsAmount" placeholder="Enter amount" type="text" required="required" class="form-control mb-3">
+                        <input id="pointsAmount" name="pointsAmount" placeholder="Enter amount" type="text" class="form-control mb-3">
                     </div>
 
-                    <div class="form-group">
-                        <label for="robuxAmount" class="mb-2 offset-2">Equivalent Reward</label>
-                        <input id="robuxAmount" name="robuxAmount" placeholder="0" type="text" disabled class="form-control mb-3">
+                    <div class="form-group text-center">
+                        <label for="robuxAmount" class="mb-2">Equivalent Reward</label>
+                        <input id="robuxAmount" name="robuxAmount" placeholder="0" type="text" class="form-control mb-3">
                     </div>
                     
-                    <div class="form-group mb-3">
+                    <div class="form-group mb-3 d-none">
                         <div class="d-grid">
                             <button name="calculatePayout" type="submit" class="btn btn-success">Calculate</button>
                         </div>
@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-    <p class="text-center text-danger">*Rewards are calculated with tax included (30%)</p>
+    <p class="text-center text-danger">*Rewards are calculated with exact values and tax included (30%)</p>
 
     <script src="script.js"></script>
     <!-- FontAwesome JS -->
