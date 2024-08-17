@@ -18,3 +18,25 @@ document.getElementById('robuxAmount').addEventListener('input', function() {
         document.getElementById('pointsAmount').value = '';
     }
 });
+
+document.getElementById('tipAmount').addEventListener('input', function() {
+    let tip = parseFloat(this.value);
+    if (!isNaN(tip)) {
+        // Apply 40% tax on the tip
+        let equivalent = tip * (1 - 0.40);
+        document.getElementById('equivalentRobux').value = equivalent.toFixed(2);
+    } else {
+        document.getElementById('equivalentRobux').value = '';
+    }
+});
+
+document.getElementById('equivalentRobux').addEventListener('input', function() {
+    let equivalent = parseFloat(this.value);
+    if (!isNaN(equivalent)) {
+        // Reverse the tax calculation to find the original tip amount
+        let tip = equivalent / (1 - 0.40);
+        document.getElementById('tipAmount').value = tip.toFixed(2);
+    } else {
+        document.getElementById('tipAmount').value = '';
+    }
+});
