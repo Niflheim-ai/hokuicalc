@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -22,14 +23,31 @@ body {
 
 #robuxAmount, #equivalentRobux {
     background: url("robux-icon.png") no-repeat;
-    background-color: white;
     background-size: contain;
     background-size: 11%;
     padding-left: 40px;
     background-position: 2px;
 }
 
+.form-check {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+
+.form-check-label {
+    margin-right: 2%;
+    margin-left: 0.5%;
+}
+
+.display-1 {
+    padding-top: 10px;
+}
+
 .title {
+    position: relative;
     margin-bottom: -1%;
 }
 
