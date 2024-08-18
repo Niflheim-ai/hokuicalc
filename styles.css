@@ -16,6 +16,14 @@ body {
     height: 15%;
 }
 
+.hokuilogo {
+    width: 100px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
 .user-input {
     background-color: rgba(187, 187, 187, 0.479);
     border-radius: 20px;
