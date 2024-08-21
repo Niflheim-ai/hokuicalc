@@ -35,7 +35,7 @@ body {
 }
 
 #robuxAmount, #equivalentRobux {
-    background: url("robux-icon.png") no-repeat;
+    background: url("Images/robux-icon.png") no-repeat;
     background-size: contain;
     background-size: 11%;
     padding-left: 40px;
@@ -48,6 +48,7 @@ body {
     position: absolute;
     width: 100%;
     z-index: 99;
+    padding-left: 2%;
 }
 
 .form-check-label {
@@ -67,7 +68,7 @@ body {
 footer {
     height: 4rem;
     bottom: 0;
-    position: absolute;
+    position: relative;
     width: 100%;
 }
 
@@ -83,4 +84,20 @@ footer {
 
 .roblox-avatar {
     width: 40px;
+}
+
+@media (min-width: 768px) {
+    footer {
+        position: absolute;
+    }
+}
+
+@media (max-width: 600px) {
+    .pointConverter, .tipCalc {
+        width: 75%;
+    }
+
+    footer {
+        position: relative;
+    }
 }
