@@ -48,7 +48,6 @@ body {
     position: absolute;
     width: 100%;
     z-index: 99;
-    padding-left: 2%;
 }
 
 .form-check-label {
